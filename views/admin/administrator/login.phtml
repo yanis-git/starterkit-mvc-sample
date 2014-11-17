@@ -1,0 +1,22 @@
+<?php $this->layout->addStyle("login.css"); ?>
+<?php $this->layout->addStyle("ladda-themeless.min.css"); ?>
+
+<div class="container">
+	<div class="login-container">
+            <div id="output"></div>
+            <div class="avatar"></div>
+            <div class="form-box">
+                <form action="" method="POST">
+                    <input name="user" type="text" placeholder="nom d'utilisateur">
+                    <input type="password" name="password" placeholder="mot de passe">
+
+                    <button class="btn btn-info btn-block login ladda-button" data-style="expand-left" type="submit"><span class="ladda-label">S'identifier</span></button>
+                </form>
+            </div>
+        </div>
+        
+</div>
+
+<?php $this->layout->addScript("spin.min.js"); ?>
+<?php $this->layout->addScript("ladda.min.js"); ?>
+<?php $this->layout->addScript("login.js"); ?>

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "nesbot/Carbon": "*",
+        "knplabs/knp-piwik-client": "1.*"
+    }
+}

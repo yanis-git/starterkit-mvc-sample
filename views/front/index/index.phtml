@@ -1,0 +1,17 @@
+<?php
+$callBack = function($type, $message){
+    echo 'toastr.'.$type.'("'.$message.'");';
+    // echo '<div class="alert alert-'.$type.'" role="alert">'.$message.'</div>';
+};
+?>
+<?php $this->layout->addStyle("//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"); ?>
+<h1>Sample Starter kit</h1>
+<?php $this->layout->addScript("//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"); ?>
+<?php $this->layout->captureScriptStart(); ?>
+<script>
+ (function($){
+    <?php Helper_Notification::render($callBack); ?>
+ })(jQuery);
+</script>
+<?php $this->layout->captureScriptStop(); ?>
+
