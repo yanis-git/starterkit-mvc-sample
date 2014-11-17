@@ -9,6 +9,4 @@ $configuration["mysql"] = array(
 			'port' => '3306'
 		);
 
-
-
 return $configuration;
